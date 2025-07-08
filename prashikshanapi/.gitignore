@@ -1,33 +1,69 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+### OS-specific ###
+.DS_Store
+Thumbs.db
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Logs ###
+*.log
+logs/
+spring.log
+
+### Build directories ###
+/target/       # Maven
+/build/        # Gradle
+
+### Maven ###
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+### Gradle ###
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+build/
+# Ignore Gradle user-specific cache
+.gradle/
+**/build/
+out/
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
+.idea/
 *.iml
+*.iws
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+.idea_modules/
 
 ### VS Code ###
 .vscode/
+
+### Eclipse ###
+.project
+.classpath
+.csettings
+.settings/
+bin/
+
+### STS (Spring Tool Suite) ###
+.springBeans
+
+### Environment files ###
+.env
+.env.*
+
+### Others ###
+*.swp
+*.swo
+*.bak
+*.tmp
+
+### Node (if frontend in same repo) ###
+node_modules/
+dist/
